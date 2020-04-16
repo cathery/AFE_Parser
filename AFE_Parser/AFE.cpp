@@ -52,8 +52,7 @@ static void PrintStackTrace(uint64_t* stack_trace, uint64_t stack_trace_size, ui
 	for (uint64_t i = 0; i != stack_trace_size; ++i)
 	{
 		//For whatever reason doing this in a single line doesn't work properly
-		printf("	ReturnAddress[%02llu]: ", i);
-		printf("%s\n", GetAddressWithModBase(module_base, stack_trace[i]));
+		printf("	ReturnAddress[%02llu]: %s\n", i, GetAddressWithModBase(module_base, stack_trace[i]));
 	}
 }
 
