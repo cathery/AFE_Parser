@@ -1,18 +1,18 @@
 TARGET            =    $(notdir $(CURDIR))
-EXTENSION         =    elf
+EXTENSION         =    exe
 OUT               =    out
 BUILD             =    build
 SOURCES           =    AFE_Parser
 INCLUDES          =    include
 CUSTOM_LIBS       =
 
-DEFINES           =
-ARCH              =    -march=native -fpie
+DEFINES           =    __STDC_FORMAT_MACROS
+ARCH              =    -march=native
 FLAGS             =    -Wall -Wextra -pipe
 CFLAGS            =    -std=gnu11
 CXXFLAGS          =    -std=gnu++17
 ASFLAGS           =
-LDFLAGS           =    -Wl,-pie
+LDFLAGS           =
 LINKS             =
 
 RELEASE_DEFINES   =    $(DEFINES) NDEBUG=1
