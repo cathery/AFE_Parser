@@ -4,7 +4,7 @@ Win32 console application to interpret Atmosphere's fatal error "report_xxxxxx.b
 # How to use
 Download the latest build from the [releases page.](https://github.com/cathery/AFEParser/releases) 
 
-In the command line, run this program with the report file as the argument.
+In the command line, run this program with the path to the report file as the argument.
 
 Currently supported AFE formats:
 - AFE2

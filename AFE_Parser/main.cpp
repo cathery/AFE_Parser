@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 	const char* filePath = argv[1];
 	if (argc < 2)
 	{
-		printf("Please pass the fatal report .bin file as the first parameter to this program\n");
+		printf("Please put the path to the fatal report .bin file as the first parameter to this program\n");
 		return -1;
 	}
 
