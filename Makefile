@@ -1,4 +1,4 @@
-TARGET            =    $(notdir $(CURDIR))
+TARGET            =    AFE_Parser
 OUT               =    out
 BUILD             =    build
 SOURCES           =    AFE_Parser
