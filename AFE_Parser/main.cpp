@@ -1,5 +1,6 @@
 #include "panic.h"
 #include "AFE.h"
+#include "inttypes.h"
 #include <cstdio>
 #include <fstream>
 
@@ -43,7 +44,7 @@ int main(int argc, char* argv[])
 	}
 	else if ((fatal_magic & 0xF0FFFFFF) == ATMOSPHERE_REBOOT_TO_FATAL_MAGIC_0)
 	{
-		printf("Passed file contains an unknown AFE version:  %.4s (0x%lX)\n", (char*)&fatal_magic, fatal_magic);
+		printf("Passed file contains an unknown AFE version:  %.4s (0x%" PRIX32 ")\n", (char*)&fatal_magic, fatal_magic);
 	}
 	else
 	{
