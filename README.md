@@ -1,5 +1,5 @@
 # Atmosphere Fatal Error Parser
-Win32 console application to interpret Atmosphere's fatal error "report_xxxxxx.bin" files (AFE).
+Console application to interpret Atmosphere's fatal error "report_xxxxxx.bin" files (AFE).
 
 # How to use
 Download the latest build from the [releases page.](https://github.com/cathery/AFEParser/releases) 
@@ -12,4 +12,4 @@ Currently supported AFE formats:
 - AFE0
 
 # Building
- Open the solution with Visual Studio (2019) and build the project like any other. It has only two targets: Debug and Release.
+Enter the project directory and run `make`. On Windows, you will need to install MinGW and have MinGW/bin in your PATH environment variable.
