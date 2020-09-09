@@ -11,7 +11,7 @@ FLAGS             =    -Wall -Wextra -pipe
 CFLAGS            =    -std=gnu11
 CXXFLAGS          =    -std=gnu++17
 ASFLAGS           =
-LDFLAGS           =
+LDFLAGS           =    -static
 LINKS             =
 
 RELEASE_DEFINES   =    $(DEFINES) NDEBUG=1
